@@ -1825,7 +1825,7 @@ static struct clk_lookup clk_lookup_xtal = {
 
 #if 1
 #define SYS_PLL_TABLE_MIN	  48000000
-#define SYS_PLL_TABLE_MAX	1512000000
+#define SYS_PLL_TABLE_MAX	1992000000
 
 struct sys_pll_s {
     unsigned cntl;
