@@ -19,5 +19,8 @@ static struct cpufreq_frequency_table meson_freq_table[]=
     {12	, 1296000  },
     {13	, 1416000  },
     {14	, 1512000  },
-    {15	, CPUFREQ_TABLE_END},
+    {15	, 1608000  },
+	{16	, 1800000  },
+	{17	, 1992000  },
+	{18	, CPUFREQ_TABLE_END},
 };
