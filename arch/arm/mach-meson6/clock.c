@@ -2659,7 +2659,7 @@ static ssize_t  clock_tree_store(struct class *cla, struct class_attribute *attr
 		else if(cmd == 'w'){
 				struct clk* clk = clk_get_sys(name,NULL);
 				if(!IS_CLK_ERR(clk)){
-					if(rate < 1000000 || rate >1512000000)
+					if(rate < 1000000 || rate >1992000000)
 						printk("Invalid rate : %lu\n",rate);
 					else{
 						if(clk_set_rate(clk,rate) ==0)
