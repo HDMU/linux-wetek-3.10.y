@@ -43,16 +43,6 @@ ifeq ($(CONFIG_CC_STACKPROTECTOR),y)
 KBUILD_CFLAGS	+=-fstack-protector
 endif
 
-ifeq ($(CONFIG_CPU_BIG_ENDIAN),y)
-KBUILD_CPPFLAGS	+= -mbig-endian
-AS		+= -EB
-LD		+= -EB
-else
-KBUILD_CPPFLAGS	+= -mlittle-endian
-AS		+= -EL
-LD		+= -EL
-endif
-
 comma = ,
 
 #
